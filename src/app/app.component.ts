@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project';
+
+  salvar(evento: any): void {
+    alert(`Valor de Z = ${evento.z}`)
+    console.log(evento)
+  }
 }
