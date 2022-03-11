@@ -1,6 +1,36 @@
-<app-componente tituloCard="Carros"></app-componente>
-<app-componente
-  [tituloCard]="title"
-  background="yellow"
-  (eventoPersonalizado)="salvar($event)"
-></app-componente>
+<main>
+    <header>
+      <h1>Our Pricing</h1>
+      <div class="toggle">
+        <span>Annually</span>
+        <mat-slide-toggle></mat-slide-toggle>
+        <span>Monthly</span>
+      </div>
+    </header>
+  <div class="flex-cards">
+    <app-componente
+      titulo="Basic"
+      preco="19.99"
+      hd="500 GB Storage"
+      users="2 Users Allowed"
+      sendup="Send Up to 3GB"
+      (btnClickEvent)="pacoteComprado()"
+      ></app-componente>
+    <app-componente
+      titulo="Professional"
+      preco="24.99"
+      hd="1 TB Storage"
+      users="5 Users Allowed"
+      sendup="Send Up to 10GB"
+      (btnClickEvent)="pacoteComprado()"
+      ></app-componente>
+    <app-componente
+      titulo="Master"
+      preco="39.99"
+      hd="2 TB Storage"
+      users="10 Users Allowed"
+      sendup="Send Up to 20GB"
+      (btnClickEvent)="pacoteComprado()"
+      ></app-componente>
+  </div>
+</main>

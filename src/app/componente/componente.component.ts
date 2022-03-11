@@ -8,15 +8,22 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class ComponenteComponent {
 
   @Input()
-  tituloCard: string = 'Algum Título'
-
+  titulo: string = ''
   @Input()
-  background: string = 'green'
+  preco: string = ''
+  @Input()
+  hd: string = ''
+  @Input()
+  users: string = ''
+  @Input()
+  sendup: string = ''
+  @Input()
+  id: string = ''
 
   @Output()
-  eventoPersonalizado: EventEmitter<any> = new EventEmitter<any>()
+  btnClickEvent: EventEmitter<any> = new EventEmitter<any>()
 
-  emitirEventoPersonalizado(): void {
-    this.eventoPersonalizado.emit({x: 'Prop1', y:556, z:true, w: [1, 2, 3]})
+  emitirEvento():void {
+    this.btnClickEvent.emit()
   }
 }

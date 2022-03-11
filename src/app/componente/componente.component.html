@@ -1,18 +1,17 @@
-<mat-card [style] = "'max-width: 250px;' + 'background-color: ' + background + ';'">
-  <mat-card-header>
-    <mat-card-title>{{ tituloCard }}</mat-card-title>
-  </mat-card-header>
-    <mat-card-content>
-      <p>
-        Lorem ipsum dolor sit amet
-        consectetur adipisicing elit.
-        Tempora blanditiis quos incidunt
-        at sit natus a cupiditate similique
-        praesentium, perspiciatis alias voluptas
-        commodi atque autem! Cum odio dolore iusto
-        molestiae?
-      </p>
-      <button mat-button color="basic" (click)="emitirEventoPersonalizado()">Salvar</button>
-    </mat-card-content>
-
-  </mat-card>
+<mat-card>
+  <mat-card-title>{{ titulo }}</mat-card-title>
+  <article>
+      <span>$</span>
+      <strong>{{ preco }}</strong>
+  </article>
+  <mat-list>
+    <mat-divider></mat-divider>
+    <mat-list-item>{{ hd }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>{{ users }}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>{{ sendup }}</mat-list-item>
+    <mat-divider></mat-divider>
+  </mat-list>
+  <button mat-stroked-button color="primary" (click)="emitirEvento()">LEARN MORE</button>
+</mat-card>

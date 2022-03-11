@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar'
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project';
+  title = 'ProjectAngular';
 
-  salvar(evento: any): void {
-    alert(`Valor de Z = ${evento.z}`)
-    console.log(evento)
+  constructor(private _snackBar: MatSnackBar) {}
+
+  pacoteComprado():void {
+    this._snackBar.open('Pacote comprado!', 'Fechar')
   }
 }
