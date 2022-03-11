@@ -1,10 +1,27 @@
+.toggle span{
+  padding: 1rem;
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
 .flex-cards {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+h1 {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: hsl(237, 8%, 50%);
+}
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
+header:first-child {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+

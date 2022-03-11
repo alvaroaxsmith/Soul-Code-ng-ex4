@@ -3,7 +3,7 @@
       <h1>Our Pricing</h1>
       <div class="toggle">
         <span>Annually</span>
-        <mat-slide-toggle></mat-slide-toggle>
+        <mat-slide-toggle color="primary"></mat-slide-toggle>
         <span>Monthly</span>
       </div>
     </header>
@@ -22,6 +22,7 @@
       hd="1 TB Storage"
       users="5 Users Allowed"
       sendup="Send Up to 10GB"
+      [id]="'center-card'"
       (btnClickEvent)="pacoteComprado()"
       ></app-componente>
     <app-componente

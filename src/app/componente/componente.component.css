@@ -1,0 +1,54 @@
+.card {
+  width: 10rem;
+  height: 14.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  border-radius: 8px;
+}
+mat-card-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+article {
+  display: flex;
+}
+article span {
+  padding-top: 0.6rem;
+  padding-right: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+article strong {
+  font-size: 2.5rem;
+}
+
+mat-list mat-divider {
+  margin: 0 1rem 0 1.3rem;
+  width: 12.5rem;
+}
+
+button {
+  margin-top: 1rem;
+  width: 12rem;
+}
+#center-card mat-list-item {
+  color: #fff;
+}
+#center-card {
+  background-color: hsl(238, 64%, 68%);
+  color: #fff;
+  height: 16.5rem;
+}
+
+#center-card button {
+  color: #fff;
+  border-color: #fff;
+}
+#center-card mat-list mat-divider {
+  border-color: white;
+}
